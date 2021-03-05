@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sports Website</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="Home.css">
+        <style>
+          :root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,.8);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn{
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+    border: 1px solid var(--dark);
+    box-shadow: var(--dark);
+    padding: 0.6rem 1.3rem;
+}
+
+.main ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.main a{
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:var(--light);
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--dark);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: grey;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: yellow;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+     .navbar {
+       padding-top: 15px;
+       padding-bottom: 15px;
+       border: 0;
+       border-radius: 0;
+       margin-bottom: 0;
+       font-size: 12px;
+       letter-spacing: 5px;
+       background-color: red;
+     }
+
+     .navbar-nav li a:hover {
+      color: #1abc9c !important;
+    }
+
+     nav strong{
+       color: #1abc9c;
+       font-size: 30px;
+     }
+     body{
+       background-color: white ;
+
+     }
+     .jumbotron{
+       box-shadow: 0px 5px 0px 5px black;
+     }
+     #close{
+      margin-left:230px;
+      position: absolute;
+     }
+
+     .headlines {
+       padding-top: 30px;
+       padding-bottom: 30px;
+       border: 0;
+       border-radius: 0;
+       margin-bottom: 0;
+       font-size: 12px;
+       letter-spacing: 10px;
+       background-color:lightgray;
+     }
+     footer{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+      background-color: #222222;
+      color: #9d9d9d;
+
+      width: 100%;
+    }
+
+    footer a{
+      color: #9d9d9d;
+    }
+
+    footer a:hover {
+      color: #1abc9c !important;
+    }
+
+    </style>
+
+  </style>
+
+
+    <body>
+
+        <nav class="navbar navbar-inverse " role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="">RA SPORTS NEWS</a>
+              <a class="navbar_brand"></a>
+            </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/cricket">CRICKET</a></li>
+              </ul>
+              <ul  class="nav navbar-nav navbar-right">
+                <li><a href="/basketball">basketBALL</a></li>
+              </ul>
+
+            </div>
+        </nav>
+        <br>
+
+        <div class = "headlines">
+          <center><h4>Premier League to allow five substitutions on June 17 restart</h4></center>
+        </div>
+        <br><br>
+        <div class="img">
+          {% load static %}
+            <center>  <img src="{% static 'images/football1.jpg' %}" alt="Random Name" width="80%"></center>
+          </div>
+          <br><br>
+
+          <div class="container-fluid text-center">
+            <div class="jumbotron">
+
+              <div class="row">
+                <p>Five substitutions will be allowed in games when the Premier League restarts on June 17, it has been decided at the latest league meeting.
+
+The 20 member clubs met on Thursday to discuss a range of measures building towards the planned return to action later this month.
+
+It has been decided that, for the remainder of the 2019/20 season, the number of substitutes used during a match will increase from three to five players.That is in line with the temporary law amendment made by the International Football Association Board last month.
+
+Shareholders also approved for clubs to increase the maximum number of substitute players on the bench from seven to nine for the rest of the 2019/20 season.
+
+
+FIFA proposed the substitutions rule change to IFAB, which is responsible for the laws of the game, as players are likely to be asked to play matches in a condensed period of time during the summer months.
+
+Teams will be limited to three opportunities during matches to make their substitutions - as well as half-time - in a bid to prevent unnecessary stoppages.By Geraint Hughes, Sky Sports News reporter
+
+A number of issues were discussed at the Premier League shareholders meeting, so much work has been done in previous meetings of which there have been at least one a week, but so much more is still to be decided.
+
+On Thursday, the method or framework for curtailment continued to be discussed as it has done in previous meetings. At the moment there is so much momentum behind the restart of the season on June 17, there are no plans to vote or come to an agreement over a method of curtailment just yet.
+
+It's something they can possibly look at if and when a scenario where it is needed exists. The processes and planning is in place as part of the government's Step 4 return to play protocols.</p>
+      </div>
+
+
+              </div>
+              <footer class='container-fluid text-center' color="red">
+                    <div class="row">
+
+
+                    </div>
+                    <p>Made using Django </p>
+                  </footer>

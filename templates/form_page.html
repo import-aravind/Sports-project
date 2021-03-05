@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load crispy_forms_tags %}
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+  <style media="screen">
+     .navbar {
+       padding-top: 15px;
+       padding-bottom: 15px;
+       border: 0;
+       border-radius: 0;
+       margin-bottom: 0;
+       font-size: 12px;
+       letter-spacing: 5px;
+       background-color: red;
+     }
+
+     .navbar-nav li a:hover {
+      color: #1abc9c !important;
+    }
+
+     nav strong{
+       color: #1abc9c;
+       font-size: 30px;
+     }
+     body{
+       background-color: white;
+
+     }
+
+  </style>
+
+
+    <body>
+
+        <nav class="navbar navbar-inverse " role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="">RA SPORTS NEWS</a>
+              <a class="navbar_brand"></a>
+            </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/login">LOGIN</a></li>
+              </ul>
+            </div>
+        </nav>
+
+
+
+  <body>
+    <br>
+    <br>
+    <br>
+<div class="container-fluid text center" align="center">
+  <div class="jumbotron">
+    <div class="">
+      <form  method="POST" class="form-group">
+        {% csrf_token %}
+        <table>
+          {{form | crispy}}
+        </table>
+
+        <input type="submit" class="btn btn_primary" value="Submit" color="red">
+
+      </form>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+  </body>
+</html>
